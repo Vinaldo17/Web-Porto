@@ -1,8 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    height: 3000px; /* Add height for scrolling */
-    
+    min-height: 2000px; /* Add height for scrolling */
+    scroll-behavior: smooth;
+    transition: 2s ease;
+    font-size: 16px;
 }
 .custom-navbar {
     background-color: rgba(0, 0, 0, 0.518);
@@ -19,19 +21,20 @@ body {
 .image-container{
     position: relative;
     overflow: hidden;
+
+}
+.home-image{
     filter: brightness(0.5);
 }
 .text-box {
     position: absolute;
     top: 50%;  /* Center the text vertically */
-    left: 100px; /* Center the text horizontally */
-    transform: translate(0, -50%); /* Offset to center the text */
-    
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 10px;
+    left: 3vw; 
+    transform: translate(-50%, -50%); /* Offset to center the text */
+    padding: 0em;
+
     text-align: left;
+   color: white;
 }
 .pirata-one-regular {
     font-family: "Pirata One", system-ui;
@@ -40,7 +43,7 @@ body {
   }
 
 .nama-profil{
-    font-size: 20px;
+    font-size: 1.5vw;
     color: rgba(250, 250, 250, 0.612);
 }
 
@@ -58,17 +61,44 @@ body {
     transition : all 1s;
 
 }
+.hiddenx {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition : all 1s;
+
+}
+
 .hiddeny {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(50%);
-    transition : all 0.6s;
+    transform: translateY(0%);
+    transition : all 1s;
 
 }
 .judul-nama{
-    font-size: 50px;
-    transition-delay: 500ms;
+    font-size: 5vw;
+    color: #ff0000;
+    padding: 0px 0px 0px 0px;
 }
+.image-profil-home{
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);  /* Center the text vertically */
+   /* Offset to center the text */
+    width: 15vw;
+    object-fit: cover;
+    border: 0.25vw solid white;
+    border-radius: 50%;
+    transition: border-radius 0.5s ease;
+    overflow: hidden;
+    
+}
+
+
+
 .show {
     
     opacity: 1;
@@ -83,15 +113,46 @@ body {
     transform: translateX(0);
 
 }
+.showx {
+    
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+}
 section{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    margin-top: 5vh;
+    padding-top: 50px;
+    height: auto;
     color: #fff;
+    top: 100%;
+    transform: translate(50%,50%);
+}
+.judul-2{
+    font-size: 2.5vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.normal-text{
+    font-size: 1.5vw;
+    color: #999999;
+}
+.about-text{
+    width: 90%;
+    top: 50%;
+    text-align: center;
+    
+}
+.judul-sec{
+    padding: auto;
+
 }
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
     }
 }
+
