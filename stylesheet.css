@@ -30,13 +30,13 @@ body {
 }
 .text-box {
     position: absolute;
-    top: 50%;  /* Center the text vertically */
+    top: 35%;  /* Center the text vertically */
     left: 3vw; 
     transform: translate(-50%, -50%); /* Offset to center the text */
     padding: 0em;
 
     text-align: left;
-   color: white;
+    color: white;
 }
 .pirata-one-regular {
     font-family: "Pirata One", system-ui;
@@ -53,9 +53,8 @@ body {
     white-space: nowrap; /* Prevent text from wrapping */
     transition: left 0.5s ease; /* Smooth transition for scrolling */
 }
-.pp{
-    background-color: #fff;
-}
+
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -85,7 +84,7 @@ body {
 }
 .image-profil-home{
 
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);  /* Center the text vertically */
@@ -111,6 +110,10 @@ body {
     height: 0;        /* Tinggi awal diatur ke 0 */
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio (tinggi/lebar = 9/16 * 100) */
 }
+.carousel-item.img {
+    border-radius: 10%;
+    object-fit: cover;
+}
 
 .carousel-item img {
     position: absolute; /* Posisi gambar absolute */
@@ -135,6 +138,7 @@ body {
     transform: translateX(0);
 
 }
+
 .showx {
     
     opacity: 1;
@@ -152,6 +156,7 @@ section{
     color: #fff;
     top: 100%;
     transform: translate(50%,50%);
+    height: 120%;
 }
 .judul-2{
     font-size: 2.5vw;
@@ -173,6 +178,123 @@ section{
     margin-bottom: 2rem;
 
 }
+/* From Uiverse.io by MijailVillegas */ 
+.cardd {
+  max-width: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.cardd li{
+    margin: 0 10px;
+}
+
+.card:hover {
+  animation: ease-out 5s;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.card ul {
+  padding: 0.5rem;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card ul li {
+  cursor: pointer;
+}
+
+.svg {
+  transition: all 0.3s;
+  /* if you find some problems change w - h : 30px*/
+  padding: 1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: rgb(255, 174, 0);
+  fill: currentColor;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.text {
+  opacity: 0;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s;
+  color: rgb(255, 174, 0);
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 9999;
+  box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+    -10px 0 1px rgba(153, 153, 153, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/*isometric prooyection*/
+.iso-pro {
+  transition: 0.5s;
+}
+.iso-pro:hover a > .svg {
+  transform: translate(15px, -15px);
+  border-radius: 100%;
+}
+
+.iso-pro:hover .text {
+  opacity: 1;
+  transform: translate(25px, -2px) skew(-5deg);
+}
+
+.iso-pro:hover .svg {
+  transform: translate(5px, -5px);
+}
+
+.iso-pro span {
+  opacity: 0;
+  position: absolute;
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 50px;
+  width: 50px;
+}
+
+.iso-pro:hover span {
+  opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+
+
+
+
+
+
+
+
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
