@@ -7,8 +7,9 @@ body {
     font-size: 16px;
     
 }
+
 .custom-navbar {
-  
+
     background-color: rgba(0, 0, 0, 0.518);
     transition: background-color 0.4s ease, height 0.4s ease;
   }
@@ -167,7 +168,7 @@ section{
     color: #999999;
 }
 .about-text{
-    width: 90%;
+    width: 100%;
     top: 50%;
     text-align: center;
     
@@ -402,7 +403,7 @@ section{
 }
 .text-box {
   position: relative;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -412,17 +413,17 @@ section{
 .judul-2{
   transform: translate(-50%,-300%);
   left: 50%;
-  width: 90%;
+  width: 100%;
   position: absolute;
   justify-content: center;
   text-align: center;
-  align-items: ;
+  align-items: center;
 }
 
 .judul-nama{
   transform: translate(-50%,-100%);
   left: 50%;
-  width: 90%;
+  width: 100%;
   position: absolute;
   justify-content: center;
   text-align: center;
@@ -466,6 +467,7 @@ section{
   align-items: center;
   align-content: center;
   padding-left: 0;
+  margin-bottom:70px;
 
 }
 
