@@ -460,7 +460,7 @@ section{
   align-content: center;
 }
 .cardd{
-  position: absolute;
+  position: relative;
   width: 100vh;
   justify-content: center;
   align-items: center;
