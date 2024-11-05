@@ -11,7 +11,7 @@ window.addEventListener('scroll',() => {
     // Calculate darkness level based on scroll position (between 0 and 1)
     const darknessLevel = Math.min(scrollTop / maxScroll, 1);
     image.style.filter = `brightness(${1 - 2*(darknessLevel)})`;
-    image1.style.filter = `brightness(${1.8 - 2*(darknessLevel)})`;
+    image1.style.filter = `brightness(${2 - 3*(darknessLevel)})`;
     // Apply the darkness as a CSS filter (darker as you scroll more)
     
 });

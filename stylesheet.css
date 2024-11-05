@@ -5,6 +5,7 @@ body {
     scroll-behavior: smooth;
     transition: 2s ease;
     font-size: 16px;
+    
 }
 .custom-navbar {
     background-color: rgba(0, 0, 0, 0.518);
@@ -30,11 +31,11 @@ body {
 }
 .text-box {
     position: absolute;
-    top: 35%;  /* Center the text vertically */
+    width: 50%;
+    top: 45%;  /* Center the text vertically */
     left: 3vw; 
     transform: translate(-50%, -50%); /* Offset to center the text */
-    padding: 0em;
-
+    padding: 0em;       
     text-align: left;
     color: white;
 }
@@ -50,7 +51,6 @@ body {
 }
 
 .scroll-text {
-    white-space: nowrap; /* Prevent text from wrapping */
     transition: left 0.5s ease; /* Smooth transition for scrolling */
 }
 
@@ -110,12 +110,10 @@ body {
     height: 0;        /* Tinggi awal diatur ke 0 */
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio (tinggi/lebar = 9/16 * 100) */
 }
-.carousel-item.img {
-    border-radius: 10%;
-    object-fit: cover;
-}
+
 
 .carousel-item img {
+    object-fit: cover;
     position: absolute; /* Posisi gambar absolute */
     top: 50%;           /* Posisikan di tengah secara vertikal */
     left: 50%;         /* Posisikan di tengah secara horizontal */
@@ -152,7 +150,7 @@ section{
     align-content: center;
     margin-top: 1rem;
     padding-top: 50px;
-    min-height: 100%;
+    min-height: 100vh;
     color: #fff;
     top: 100%;
     transform: translate(50%,50%);
@@ -173,6 +171,10 @@ section{
     text-align: center;
     
 }
+.hobby-sec{
+  background-color: rgba(71, 71, 71, 0.462);
+
+}
 .judul-sec{
     padding: auto;
     margin-bottom: 2rem;
@@ -187,15 +189,15 @@ section{
   list-style-type: none;
 }
 .cardd li{
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
-.card:hover {
+.cardd:hover {
   animation: ease-out 5s;
   background: rgba(0, 0, 0, 0.05);
 }
 
-.card ul {
+.cardd ul {
   padding: 0.5rem;
   display: flex;
   list-style: none;
@@ -205,9 +207,10 @@ section{
   align-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  
 }
 
-.card ul li {
+.cardd ul li {
   cursor: pointer;
 }
 
@@ -218,10 +221,10 @@ section{
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  color: rgb(255, 174, 0);
+  color: #ff0000;
   fill: currentColor;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
-    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    inset 0 0 5px rgba(255, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
 }
 
 .text {
@@ -229,14 +232,14 @@ section{
   border-radius: 5px;
   padding: 5px;
   transition: all 0.3s;
-  color: rgb(255, 174, 0);
+  color: #ff0000;
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   z-index: 9999;
   box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
     -10px 0 1px rgba(153, 153, 153, 0.2),
-    inset 0 0 20px rgba(255, 255, 255, 0.3),
-    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+    inset 0 0 20px rgba(255, 0, 0, 0.3),
+    inset 0 0 5px rgba(255, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
 }
 
 /*isometric prooyection*/
@@ -263,7 +266,7 @@ section{
   color: #1877f2;
   border-color: #1877f2;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
-    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    inset 0 0 5px rgba(255, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
   border-radius: 50%;
   transition: all 0.3s;
   height: 50px;
@@ -288,12 +291,87 @@ section{
   transform: translate(10px, -10px);
 }
 
+.galery-grup{
+  position: relative;
+  border-radius: 5%;
+  height: 400px;
+  width: 95%;
+  display: flex;  
+  overflow-x: auto;
+  /* background-color: #ddd; */
+  overflow-y: hidden;
+  
+
+}
+
+.galery-grup::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  list-style: none;
+}
 
 
+.galery-item{
+  position:relative;
+  height: 400px ;
+  width: 300px;
+  padding-bottom: 177%;
+
+  text-align: center;
+  border-radius: 5%;
+  margin: 0px 30px;
+  object-fit: cover;
+  transition: 0.3s ease;
 
 
+}
 
+.galery-item img{
+  height: 400px ;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5%;
+  filter: brightness(80%);
 
+}
+
+.img-text{
+
+  position: absolute;
+  top: 0%;
+  padding-top: 10px;
+  height: 400px ;
+  width: 300px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s ease;
+  object-fit: cover;
+
+  /* background-color: aqua; */
+}
+.img-text h2{
+
+  justify-content: center;
+}
+.img-text p{
+  justify-content: center;
+}
+.galery-item:hover img{
+
+  width: 300px;
+  object-fit: cover;
+  height: 400px;
+  border-radius: 5%;
+  filter: blur(5px) brightness(80%);
+  
+  
+
+}
+.galery-item:hover .img-text{
+  object-fit: cover;
+  opacity: 1;
+  filter: brightness(80%);
+}
 
 @media(prefers-reduced-motion){
     .hidden{
