@@ -392,7 +392,7 @@ section{
 .image-container{
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: auto;
   width: 100%;
 }
 .home-image{
