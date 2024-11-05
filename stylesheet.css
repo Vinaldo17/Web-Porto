@@ -391,12 +391,15 @@ section{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   
 .image-container{
   position: relative;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
   overflow: hidden;
-  min-height: auto;
   width: 100%;
 }
 .home-image{
@@ -405,46 +408,53 @@ section{
 
 }
 .text-box {
+  margin: 0 auto;
+  padding: 0px;
+  left: 0px;
+  top: 100%;
   position: relative;
   width: 90%;
+  justify-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+
 }
 .judul-2{
-  transform: translate(-50%,-300%);
-  left: 50%;
-  width: 90%;
-  position: absolute;
+
+  width:80% ;
+  position: relative;
+  justify-items: center;
   justify-content: center;
   text-align: center;
-  align-items: ;
+  align-items:center;
 }
 
 .judul-nama{
-  transform: translate(-50%,-100%);
-  left: 50%;
-  width: 90%;
-  position: absolute;
+  width: 80%;
+  position: relative;
   justify-content: center;
   text-align: center;
   align-items: center;  
-  position: absolute;
+  justify-items: center;
+  align-content: center;
   font-size: 6vw;
   color: #ff0000;
-  padding: 0px 0px 0px 0px;
+  /* padding: 0px 0px 0px 0px; */
 
 }
 .image-profil-home{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
   position: relative;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);  /* Center the text vertically */
- /* Offset to center the text */
+  background-color: #1877f2;
   width: 25vw;
   object-fit: cover;
   border: 0.5vw solid rgba(255, 255, 255, 0.626);
@@ -453,29 +463,21 @@ section{
   overflow: hidden;
   
 }
-.medsos-card{
-  position: relative;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.medsos-card ul{
+  padding: 0px;
+  margin: 0px;
 }
-.medsos-card .cardd{
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.cardd{
+.cardd li{
+
   position: relative;
-  width: 100vh;
+  width: 100%;
+  justify-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-left: 0;
+  margin-top:20px;
   margin-bottom:70px;
-
-}
-
-
+  margin-left: 0px;
+  padding-left: 0px;
 
 }
