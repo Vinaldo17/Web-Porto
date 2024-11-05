@@ -51,7 +51,7 @@ body {
   }
 
 .nama-profil{
-    font-size: 1.5vw;
+    font-size: 16px;
     color: rgba(250, 250, 250, 0.612);
 }
 
@@ -480,4 +480,4 @@ section{
   margin-left: 0px;
   padding-left: 0px;
 
-}
+};
